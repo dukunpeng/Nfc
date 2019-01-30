@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lmbg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/userImg"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/a" />
+
+        <EditText
+            android:id="@+id/edittext_beam_text"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="15dp"
+            android:hint="请先编辑我的昵称"
+            android:textColorHint="#d00000" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ld"
+        android:layout_width="80dp"
+       android:layout_gravity="center_horizontal"
+        android:layout_height="80dp"
+       />
+    <TextView
+        android:id="@+id/dododo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="先将当前设备靠近目标NFC设备\n\n然后再次触摸屏幕\n\n就可以轻松加好友了"
+        android:textColor="#d00000"
+        android:textSize="20sp" />
+</LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_nfctext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="#d00000"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/friendPan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#80ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="灰太狼"
+                android:textColor="#d00000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="想加您为好友"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_gray_shape"
+                android:gravity="center"
+                android:text="拒绝"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1px" />
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_blue_shape"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_blue_shape"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>-->
+
+</LinearLayout>
